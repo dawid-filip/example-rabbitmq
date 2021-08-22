@@ -11,8 +11,12 @@ Download:
 2. The Erlang [https://erlang.org/download/otp_win64_24.0.exe](https://erlang.org/download/otp_win64_24.0.exe).
 
 Run as Administrator and install:
-1. the `otp_win64_24.0.exe` and then,
-2. the `rabbitmq-server-3.9.4.exe`.
+1. The `otp_win64_24.0.exe` and then,
+2. The `rabbitmq-server-3.9.4.exe`.
+
+Then add system environment variables:
+- `ERLANG_HOME` - should point to Erlang installation directory (i.e: C:\Program Files\erl-24.0),
+- `RABBITMQ_BASE` - should point to RabbitMQ installation directory (i.e: C:\Program Files\rabbitmq_server-3.9.4).
 
 Open command shell as Administrator and navigate to rabbitmq-server directory and execute following commands:
 1. `cd rabbitmq_server-3.9.4\sbin`
@@ -26,4 +30,3 @@ Open rabbitmq administration panel by running [http://localhost:15672/](http://l
 - Password: `guest` *
 
 `*` you can change default credentials be updating corresponding properties in the `application.properties` file.
-
